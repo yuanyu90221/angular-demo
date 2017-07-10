@@ -11,6 +11,9 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 import { StarComponent } from './star/star.component';
+import { LikesComponent } from './likes/likes.component';
+import { PanelComponent } from './panel/panel.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { StarComponent } from './star/star.component';
     AuthorsComponent,
     SummaryPipe,
     StarComponent,
-    Capitalize
+    Capitalize,
+    LikesComponent,
+    PanelComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,

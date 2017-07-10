@@ -1,0 +1,12 @@
+a {
+   text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+.filled {
+  color: deeppink;
+}
+.not-filled {
+  color: #ccc;
+}
