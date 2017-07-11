@@ -16,6 +16,7 @@ export class AppComponent {
     likesCount: 10,
     isLiked: false
   };
+  canSave = false;
   onLikeChange(eventArgs: LikeChangedEventArgs ) {
     console.log('Like changed : ', eventArgs);
   }

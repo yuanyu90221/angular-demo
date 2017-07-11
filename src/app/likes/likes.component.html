@@ -1,5 +1,7 @@
 <span (click)="onClick()"
       class="glyphicon"
-      [class.glyphicon-star]="isLike"
-      [class.glyphicon-star-empty]="!isLike">
+      [ngClass]="{
+        'glyphicon-star': isLike,
+        'glyphicon-star-empty': !isLike
+      }">
 </span>

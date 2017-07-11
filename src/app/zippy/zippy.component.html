@@ -1,0 +1,14 @@
+<div class="zippy">
+  <div class="zippy-heading" [class.expanded]="isCollapse" (click)="toggle()">
+    {{title}}
+    <span class="glyphicon"
+      [ngClass]="{
+        'glyphicon-chevron-up': isCollapse,
+        'glyphicon-chevron-down': !isCollapse
+      }"
+    ></span>
+  </div>
+  <div *ngIf="isCollapse" class="zippy-body">
+    <ng-content></ng-content>
+  </div>
+</div>
