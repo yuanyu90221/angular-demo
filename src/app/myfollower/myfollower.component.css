@@ -1,0 +1,26 @@
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+/*.follower_content {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.follower_group {
+  display: flex;
+}*/
