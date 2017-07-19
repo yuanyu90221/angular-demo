@@ -29,6 +29,11 @@ import { ChangePasswdFormComponent } from './change-passwd-form/change-passwd-fo
 import { HttpModule } from '@angular/http';
 import { PostComponent } from './post/post.component';
 import { MyfollowerComponent } from './myfollower/myfollower.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { GithubProfileComponent } from './github-profile/github-profile.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -52,13 +57,39 @@ import { MyfollowerComponent } from './myfollower/myfollower.component';
     NewCourseFormComponent,
     ChangePasswdFormComponent,
     PostComponent,
-    MyfollowerComponent
+    MyfollowerComponent,
+    NavbarComponent,
+    GithubProfileComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'followers/:id/:username',
+        component: GithubProfileComponent
+      },
+      {
+        path: 'followers',
+        component: MyfollowerComponent
+      },
+      {
+        path: 'posts',
+        component: PostComponent
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
+      },
+    ])
   ],
   providers: [
     CoursesService,
