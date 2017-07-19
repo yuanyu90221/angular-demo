@@ -16,13 +16,6 @@ export class GithubProfileComponent implements OnInit {
     });
   }
   ngOnInit() {
-    // const id = this.route.snapshot.paramMap.get('id');
-    // console.log(id);
-    // this.route.paramMap
-    //   .subscribe(params => {
-    //     const id = +params.get('id'); // +用來把 string轉成 number
-    //     console.log(id);
-    //   });
   }
 
 }
